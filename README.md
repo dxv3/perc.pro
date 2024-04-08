@@ -1,3 +1,3 @@
 kys!
 
-why does dc presence not update auto... :<
+why does dc presence not auto update?! :<
