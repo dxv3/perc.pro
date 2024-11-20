@@ -1,0 +1,183 @@
+@import 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=Roboto:wght@100;300;400;500;700&display=swap';
+*,
+*::after,
+*::before {
+    box-sizing: border-box
+}
+
+html {
+    cursor: url(domain/assets/css/other/cursor.png), default;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+
+#enter {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    position: absolute;
+    transition: .3s ease-in;
+    font-size: 24px;
+}
+
+.card,
+.card1,
+.card2 {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 12px;
+    align-items: right;
+    height: 1%
+}
+
+.card-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: thin;
+    margin-bottom: 16px;
+    font-family: monospace;
+    opacity: .5
+}
+
+.user-profile {
+    display: flex;
+    gap: 1em
+}
+
+.Profile-pic {
+    position: relative
+}
+
+#pfp {
+    width: 128px;
+    height: 128px;
+    border-radius: 10%;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+#pfp:hover {
+    transform: scale(1.1);
+}
+
+#emojistat {
+    width: 16px;
+    height: 16px;
+}
+
+.connection-icon:hover {
+    transform: scale(1.5);
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#activity-dot {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    border: 2px solid rgba(0, 0, 0, .3)
+}
+
+#username {
+    font-size: 28px;
+    font-weight: 700
+}
+
+#status2,
+#status {
+    opacity: .5;
+    transition: all .6s ease;
+}
+
+@media (max-width: 768px) {
+    .card,
+    .card1 {
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 30px;
+        padding: 12px;
+        align-items: right;
+        height: 1%
+    }
+    .card-title {
+        color: #fff;
+        font-size: 12px;
+        font-weight: thin;
+        margin-bottom: 16px;
+        font-family: monospace;
+        opacity: .5
+    }
+    #username {
+        font-size: 20px;
+        font-weight: 700
+    }
+    #status2,
+    #status {
+        opacity: .5;
+        transition: all .6s ease;
+        font-size: 14px;
+    }
+}
+
+.spotify-outerbar {
+    margin-top: 5px;
+    width: 100%;
+    height: 6px;
+    border-radius: 150px;
+    background-color: #1C1D22
+}
+
+#spotify-innerbar {
+    height: 6px;
+    border-radius: 150px;
+    background-color: #fff
+}
+
+.spotify-time {
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+ul,
+li {
+    padding: 0%;
+    margin: 0;
+    list-style: none
+}
+
+.connections {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 5px
+}
+
+.connection-icon {
+    height: 28px
+}

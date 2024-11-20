@@ -1,64 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<body>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>dxv3</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/531405382233489433/1187382355573354526/idk.png?ex=6596aefe&is=658439fe&hm=299627cf779261dd9c4602df68942697ff46fba781c5e0357fc7e838d8260ce9&" type="image/x-icon" />
-    <meta property="og:site_name" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" href="domain/assets/css/main.css">
+    <link rel="stylesheet" href="domain/assets/css/bg.css">
+    <link rel="stylesheet" href="domain/assets/css/meteor.css">
+    <link rel="stylesheet" href="domain/assets/css/firefly.css">
+    <script src="domain/assets/js/catgirl.js"></script>
+    <link rel="icon" href="domain\assets\media\favicon.webp">
+    <title id="title-name"> dxv3 </title>
+    <meta id="meta-name" property="og:title" content="dxv3 
+⋋ō_ō`">
+    <meta property="og:type" content="website">
     <meta property="og:url" content="https://perc.pro">
-    <meta property="og:title" content="dxv3">
-    <meta property="og:description" content="kys"> <meta property="og:type" content="website">
-    <meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/1088461750598389862/1224529154939289751/giphy.gif?ex=661dd2a5&is=660b5da5&hm=d8d1aba373eee2203e691f8c3433ad8daedb5bb9b240d67f9b6b0cd0f275a937&">
-    <meta content="#2f3136" data-react-helmet="true" name="theme-color" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <script src="title.js"></script>
+    <meta id="meta-image" property="og:image" content="https://cdn.discordapp.com/attachments/1144697694951055453/1180912692232462356/IMG_0662.jpg?ex=657f25a6&is=656cb0a6&hm=207111e728acc36e3411f6b3af753103a40495d392b2faa792f3e1a9d24bab19&">
+    <meta property="og:audio" content="https://www.youtube.com/watch?v=xDzZlIbUPm4" />
+    <meta content="dxv3" property='og:site_name'>
+    <meta name="theme-color" content="#2f3136">
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function() {
+        if (mySong.paused) {
+            mySong.play();
+            icon.src = "pause.png";
+        } else {
+            mySong.pause();
+            icon.src = "play.png";
+        }
+    }
+</script>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: roboto, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: radial-gradient(ellipse at bottom, #3f3f3f 0%, #090A0F 100%);
+        background-image: url(domain/assets/media/background.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        gap: 30px;
+    }
+
+    @media(max-width:730px) {
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: roboto, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            height: 100%;
+            overflow-x: hidden;
+            background: radial-gradient(ellipse at bottom, #301934 0%, #090A0F 100%);
+            background-image: url(domain/assets/media/background.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            zoom: 80%;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            gap: 30px;
+        }
+    }
+</style>
+</head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1217732117069607" crossorigin="anonymous"></script>
+</head>
+</head>
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+</head>
+
+</head>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-1217732117069607">
+</amp-auto-ads>
 </head>
 
 <body>
-
-
-
-    <div id="overlay">
-        <button id="enterButton">enter</button>
-        <audio id="backgroundMusic" src="file.mp3" loop></audio>
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
     </div>
+    <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
 
-    <script src="scriptt.js"></script>
-
-    <div class="background">
-        <div class="space stars1"></div>
-        <div class="space stars2"></div>
-        <div class="space stars3"></div>
     </div>
-    <main>
-        <div class="header">
-            <a href="https://discord.com/users/541388135712423936" class="discordProfile">
-                    <iframe height="218px" width="410px" scrolling="no" src="https://lanyard.cnrad.dev/api/541388135712423936?borderRadius=5px&idleMessage=i%20am%20doing%20NOTHING&bg=a&animated=true&showDisplayName=true" frameborder="0"></iframe>
-                </a>
-            <p>kami!</p>
-            <p>⠀</p>
-            <div class="icons">
-                <a href="https://discord.com/users/541388135712423936" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                <a href="https://www.tiktok.com/@dxv333" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                <a href="https://github.com/dxv3/" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+    <div class="firefly"></div>
+
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+    <div class="wrapper">
+        <script>
+            invoke("541388135712423936", "card")
+        </script>
+        <div class="card">
+            <div id="card-title" style="color: #fff;" class="card-title"></div>
+            <div id="card-user-profile" style="color: #fff;" class="user-profile">
+                <div class="Profile-pic">
+                    <img title="click to play music" class="card-pfp" id="pfp" src="domain/assets/loader.gif" alt="">
+                    <div class="card-activity-dot" style="color: #fff;" id="activity-dot" aria-label="Unknown"></div>
+                </div>
+                <div class="user-info">
+                    <img src="https://cdn3.emoji.gg/emojis/1895-subscriber-nitro-animated.gif" height="20" width="20">
+                    <img src="https://i.redd.it/qq911bvdqwu51.gif" height="20" width="20">
+                    <img src="https://cdn3.emoji.gg/emojis/3773-active-developer-badge-animated.gif" height="20" width="20">
+                    
+                    <div class="card-username" style="color: #fff;" id="username"></div>
+                    <div class="card-status" style="color: #fff;" id="status"></div>
+                    <div class="card-status2" style="color: #fff;" id="status2"></div>
+                    <div class="connections">
+                        <a id="connection-username" title="" href="https://discord.com/users/541388135712423936/"><img class="connection-icon" src="domain/assets/assets/connections/discord.svg" alt=""></a>
+                        <a title="dxv333" href="https://tiktok.com/@dxv333"><img class="connection-icon" src="domain/assets/assets/connections/tiktok.svg" alt=""></a>
+                        <a title="GitHub" href="https://github.com/dxv3"><img class="connection-icon" src="domain/assets/assets/connections/spotify.png" alt=""></a>
+                    </div>
+                </div>
             </div>
-
-
-
         </div>
-    </main>
+        <div class="card1">
+            <script>
+                setPresence()
+            </script>
+            <div id="card1-title" style="color: #fff;" class="card-title"></div>
+            <div id="card1-user-profile" style="color: #fff;" class="user-profile">
+                <div class="Profile-pic">
+                    <img class="card1-pfp" src="domain/assets/loader.gif" id="pfp" alt="">
+                </div>
+                <div class="user-info">
+                    <div class="card1-username" style="color: #fff;" id="username"></div>
+                    <div class="card1-status" style="color: #fff;" id="status"></div>
+                    <div class="card1-status2" style="color: #fff;" id="status2"></div>
+                    <div class="spotify-outerbar">
+                        <div class="card1-spotify-innerbar" id="spotify-innerbar"></div>
+                    </div>
+                    <div class="spotify-time">
+                        <div class="card1-spotify-time-start" id="spotify-time-start"></div>
+                        <div class="card1-spotify-time-end" id="spotify-time-end"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="domain/assets/js/main.js"></script>
+    <script src="domain/assets/js/cursor.js"></script>
+    <script src="domain/assets/js/enter.js"></script>
+
 </body>
-<script src="snowstorm.js"></script>
+
+</html>
